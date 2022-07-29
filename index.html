@@ -1,0 +1,289 @@
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10550309-8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-10550309-8');
+</script>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+    body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight:300;
+        font-size:18px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1100px;
+    }
+
+    h1 {
+        font-weight:300;
+    }
+
+    .disclaimerbox {
+        background-color: #eee;
+        border: 1px solid #eeeeee;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+        padding: 20px;
+    }
+
+    video.header-vid {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    img.header-img {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    img.rounded {
+        border: 1px solid #eeeeee;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    a:link,a:visited
+    {
+        color: #1367a7;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #208799;
+    }
+
+    td.dl-link {
+        height: 160px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                5px 5px 0 0px #fff, /* The second layer */
+                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                10px 10px 0 0px #fff, /* The third layer */
+                10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+                15px 15px 0 0px #fff, /* The fourth layer */
+                15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+                20px 20px 0 0px #fff, /* The fifth layer */
+                20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+                25px 25px 0 0px #fff, /* The fifth layer */
+                25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+        margin-left: 10px;
+        margin-right: 45px;
+    }
+
+
+    .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                5px 5px 0 0px #fff, /* The second layer */
+                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                10px 10px 0 0px #fff, /* The third layer */
+                10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
+
+    .vert-cent {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    hr
+    {
+        border: 0;
+        height: 1.5px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+</style>
+
+<html>
+  <head>
+        <title>Gradient-based Active Mapping</title>
+        <meta property="og:title" content="Gradient_basedActiveMapping" />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="" />
+  </head>
+
+  <body>
+    <br>
+    <center>
+    <span style="font-size:42px">Active Mapping via Gradient Ascent Optimization of <br /> Shannon Mutual Information over Continuous <i>SE(3)</i> Trajectories</a></span>
+    
+    </center>
+
+    <br><br>
+      <table align=center width=800px>
+       <tr>
+         <td align=center width=100px>
+         <center>
+         <span style="font-size:20px"><a href="https://arashasgharivaskasi-bc.github.io/grad_active_mapping/">Arash Asgharivaskasi</a></span>
+         </center>
+         </td>
+
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:20px"><a href="https://shumon0423.github.io/">Shumon Koga</a></span>
+        </center>
+        </td>
+
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:20px"><a href="https://natanaso.github.io/">Nikolay Atanasov</a></span>
+        </center>
+        </td>
+     </tr>
+    </table>
+
+    <table align=center width=700px>
+       <tr>
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:20px"> <a href="http://ece.ucsd.edu">Department of Electrical and Computer Engineering</a> <br> <a href="https://contextualrobotics.ucsd.edu">Contextual Robotics Institute</a> <br> <a href="https://ucsd.edu/">University of California, San Diego</a></span>
+        </center>
+        </td>
+     </tr>
+    </table>
+
+
+    <table align=center width=800px>
+      <tr>
+       <td align=center width=100px>
+       <center>
+       <span style="font-size:20px"><a href="">[Paper]</a></span>
+       </center>
+       </td>
+
+    </table>
+
+<br>
+            
+The problem of active mapping aims to plan an informative sequence of sensing views given a limited budget such as distance traveled. This paper considers active occupancy grid mapping using a range sensor, such as LiDAR or depth camera. State-of-the-art methods optimize information-theoretic measures relating the occupancy grid probabilities with the range sensor measurements. The non-smooth nature of ray-tracing within a grid representation makes the objective function non-differentiable, forcing existing methods to search over a discrete space of candidate trajectories. This work proposes a differentiable approximation of the Shannon mutual information (SMI) between a grid map and ray-based observations that enables gradient ascent optimization in the continuous space of <i>SE(3)</i> sensor poses. Our gradient-based formulation leads to more informative sensing trajectories, while avoiding occlusions and collisions. The proposed method is demonstrated in simulated and real-world experiments in 2-D and 3-D environments.
+            <br>
+
+    <hr>
+
+    <center><h2>Problem</h2></center>
+    In this work, we want to construct a occupancy map of the environment using range observations by finding the most informative trajectory while avoiding collisions.<br>
+    <br>
+    
+    <div class="container">
+    <center>
+        <img src="./assets/problem_1.jpg" style="width:40%">
+        <img src="./assets/problem_2.jpg" style="width:40%">
+    </center>
+    </div><br>
+
+    <center><h2>Approach</h2></center>
+    The core idea is to introduce the notion of a viewpoint grid, which is a discrete set of candidate robot poses located at grid map cell centers. Then, the SMI with respect to an arbitrary robot pose is approximated as a convex combination of the SMI with respect to the candidate poses with a differentiable function with respect to an arbitrary robot pose.<br>
+    <br>
+    
+    <div class="container">
+    <center>
+        <img src="./assets/approach_1.png" style="width:40%; position:relative; top: 50%; -ms-transform: translateY(-75%); transform:translateY(-75%);">
+        &nbsp;&nbsp;&nbsp;
+        <img src="./assets/approach_2.jpg" style="width:40%">
+    </center>
+    </div><br>
+    
+    The idea of pulling the robot pose <b>X</b> out of the SMI function using a differentiable weighting function makes it possible to obtain non-zero derivatives for the approximate SMI function with respect to the robot pose. The differentiable property of the approximate SMI enables gradient-based optimization of the robot pose in order to generate maximally informative observations. This is done via applying a small perturbation in the robot frame to the pose <b>X</b> along the direction of the gradient:<br>
+    <br>
+    
+    <div class="container">
+    <center>
+        <img src="./assets/approach_3.png" style="width:50%">
+    </center>
+    </div><br>
+    
+    Furthermore, we show that, for non-overlapping sensor footprints along a robot trajectory, the approximate SMI can be expressed as the sum of individual SMI approximations for each pose in the trajectory:<br>
+    <br>
+    
+    <div class="container">
+    <center>
+        <img src="./assets/approach_4.png" style="width:40%">
+    </center>
+    </div><br>
+    
+    The differentiability of the approximate SMI enables combining with other differentiable cost terms such as collision penalty; resulting in occlusion and collision-aware gradient-based active mapping.
+    
+    <center><h2>Experiments</h2></center>
+    
+      <div class="container">
+      <center>
+          <img src="./assets/res_1.png" style="width:50%">
+          <figcaption>2-D simulated active mapping performance compared among various methods. The results are averaged over 10 randomly generated environments with 3 random starting positions. The dashed lines represent deviation from the mean.</figcaption>
+      </center>
+      </div><br>
+      
+      <div class="container">
+      <center>
+          <img src="./assets/res_2.png" style="width:50%">
+          <figcaption>3-D active mapping performance in Unity simulation compared between Frontier, FSMI, and our method for 20 exploration iterations. Exp-2D uses a projected 2-D perception model for planning, while Exp-3D performs ray-tracing directly on the OctoMap.</figcaption>
+      </center>
+      </div><br>
+      
+      <div class="container">
+      <center>
+          <img src="./assets/res_3.png" style="width:50%">
+          <figcaption>3-D active mapping performance in real-world experiments compared between Frontier and our method for 20 exploration iterations.</figcaption>
+      </center>
+      </div><br>
+      
+      <div class="container">
+      <center>
+          <img src="./assets/res_4.png" style="width:50%">
+          <figcaption>Clearance from obstacles compared between Frontier and our proposed method averaged over 20 exploration iterations.</figcaption>
+      </center>
+      </div><br>
+
+        <hr>
+
+        <center><h1>Video</h1></center>
+        
+        <table align=center width=900px>
+            <tr> 
+                <td width=600px>
+                  <center>
+                    <div class = "video">
+                      <iframe width="800" height="480" src="https://www.youtube.com/embed/UIjr5dVngfc" frameborder="0" allowfullscreen></iframe>
+                   </div>
+                </center>
+                </td>
+            </tr>
+        </table>
+        
+          <hr>
+
+            <table align=center width=1100px>
+                <tr>
+                    <td>
+                      <left>
+                <center><h1>Acknowledgements</h1></center>
+                We gratefully acknowledge support from NSF FRR CAREER 2045945, ONR SAI N00014-18-1-2828, and ARL DCIST CRA W911NF-17-2-0181. The Unity simulation used for evaluation is developed by ARL for the <a href="https://www.dcist.org">DCIST project</a>.<br />
+            </left>
+        </td>
+        </tr>
+
+</body>
+</html>
